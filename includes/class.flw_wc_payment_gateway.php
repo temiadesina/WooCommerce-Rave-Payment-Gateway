@@ -207,7 +207,7 @@
         $order_key = urldecode( $_REQUEST['key'] );
         $order_id  = absint( get_query_var( 'order-pay' ) );
         $order     = wc_get_order( $order_id );  
-        $txnref    = "WOOC_" . $order_id . '_' . time();
+        $txnref    = "WOOC_RB_" . $order_id . '_' . time();
         $amount    = $order->order_total;
         $email     = $order->billing_email;
         $currency  = $order->order_currency; //get_option('woocommerce_currency');
