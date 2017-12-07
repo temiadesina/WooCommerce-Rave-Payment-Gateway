@@ -14,7 +14,7 @@
      */
     public function __construct() {
 
-      $this->base_url = 'http://flw-pms-dev.eu-west-1.elasticbeanstalk.com';
+      $this->base_url = 'https://rave-api-v2.herokuapp.com';
       $this->id = 'rave';
       $this->icon = null;
       $this->has_fields         = false;
