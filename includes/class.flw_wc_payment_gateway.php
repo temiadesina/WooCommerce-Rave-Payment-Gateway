@@ -319,7 +319,7 @@
       } else{
           if($this->retries > 0) {
             $this->retries--;
-            return $this->_fetchTransaction($flw_ref, $secret_key);
+            return $this->_fetchTransaction($flw_ref, $this->$secret_key);
           }
       }
 
