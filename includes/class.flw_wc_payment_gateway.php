@@ -319,7 +319,6 @@
       } else{
           if($this->retries > 0) {
             $this->retries--;
-            file_put_contents( GAC_DIR_PATH . 'log/charge.log', "Retrying ... \n\n", FILE_APPEND );
             return $this->_fetchTransaction($flw_ref, $secret_key);
           }
       }
